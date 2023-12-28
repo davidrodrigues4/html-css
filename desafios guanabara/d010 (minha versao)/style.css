@@ -1,0 +1,128 @@
+
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #84e1ad;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #39cb79, #1A5C38 );
+    padding: 10px;
+    margin: -8px -8px 0px -8px;
+    /* sentido horario: top, right, bottom e left */
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+header > p {
+    text-align: center;
+    font-size: auto;
+    color: white;
+}
+
+header > nav {
+    text-align: left;
+    font-size: auto;
+}
+
+header > nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+header > nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin: 10px;
+}
+
+section {
+    background-color: white;
+    text-align: center;
+    /* sentido horario: top, right, bottom e left */
+    box-shadow: 0px 0px 2px 2px #00000078;
+    /* Deslocamento vertical | horizontal | Espalhamento | Cor */
+    padding: 0px 5px;
+}    
+
+.verde {
+    color: #6fc092;
+}
+
+section > h1, h2 {
+    text-align: left;
+    font-family: idroid, Arial, Helvetica, sans-serif;
+    color: #1C5D38;
+    padding-left: 10px;
+}
+
+section > h2 {
+    background-image: linear-gradient(to right, #C7ECD7, white )
+}
+
+a {
+    text-decoration: none;
+    color: #32664a;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #84E1AD;
+}
+
+.video {
+    background-color: #1A5C38;
+}
+
+section > div {
+    background-color: #C5EBD6;
+}
+
+section > div > article > nav {
+    background-color: #2FA866;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;;
+}
+
+.extra {
+    padding: -1px 5px 10px 5px;
+    border-radius: 0px 0px 15px 15px;
+    margin: 0px 105px 0px 105px;
+    width: auto
+}
+
+.lista {
+    text-align: left;
+    list-style-type: none;
+}
+
+.direita {
+    text-align: right;
+}
+
+footer {
+    padding: 10px;
+    margin: -15px;
+    font-size: 20px;
+    background-color: #1A5C38;
+    text-align: center;
+    color: white
+}

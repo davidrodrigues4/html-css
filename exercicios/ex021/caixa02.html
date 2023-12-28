@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategray;
+            text-align: center;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-width: 4px;
+            border-style: groove;
+            border-color: black;
+        }
+        
+        nav {
+            background-color: rgb(153, 152, 152);
+            box-shadow: 1px 1px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+           color: white;
+           font-weight: bold;
+           margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        
+        article{ 
+            background-color: rgb(219, 209, 209);
+            padding: 5px;
+        }
+        
+        article > aside {
+            background-color: rgb(144, 141, 141);
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.55);
+        }
+
+        #assuntos {
+            background-color:rgb(144, 141, 141) ;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #assuntos > p > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .tecnologia { 
+          margin-right: 30px;
+          margin-left: 30px;
+        }
+
+        .tecnologia:hover {
+            text-decoration: underline;
+        }
+
+        .informatica:hover {
+            text-decoration: underline;
+        }
+
+        .jogos:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Meu site</h1> 
+        <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+        </nav>       
+     </header>
+     <main>
+        <section id="assuntos">
+            <p>
+               <a href="#"><span class="informatica">Informática</span> </a>
+               <a href="#"><span class="tecnologia">Tecnologia </span></a>
+               <a href="#"><span class="jogos">Jogos</span></a>
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia Teste</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, unde.</p>
+                <aside>
+                    <p>Artigo escrito por David Corrêa</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+     </main>
+     <footer>
+        <p>Desenvolvido por David Corrêa</p>
+     </footer>
+     <div id="bola"></div>
+</body>
+</html>
