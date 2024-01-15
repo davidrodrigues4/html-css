@@ -84,12 +84,16 @@ main > article > h2 {
 }
 
 .containerA {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
 }
 
-.sidetext {
-    display: block;
-
+.containerA > p {
+    display: inline-block;
+    font-size: 1.5vw;
+    line-height: 1.5em;
+    padding: 10px;
 }
 
 main > article > div > p {
