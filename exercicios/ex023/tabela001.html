@@ -10,21 +10,20 @@
         }
 
         table {
+            height: 400px;
             width: 400px;
             border-collapse: collapse;
-        }
-
-        tr.linha {
-            background-color: lightgray;
         }
 
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle;  
         }
 
-        td.dado {
-            background-color: yellow;
+        .numero {
+            text-align: right;
         }
 
     </style>
@@ -38,6 +37,7 @@
                 TABLE DATA = dado de tabela
 
     -->
+
     <h1>Minha primeira tabela</h1>
     <table>
         <tr> <!-- Primeira linha-->
@@ -49,13 +49,13 @@
         <tr class="linha"> <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr> <!--Terceira linha-->
             <td>A3</td> 
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
 
         <tr> <!--Quarta linha-->
