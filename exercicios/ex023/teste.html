@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: lightcyan;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Funcionários</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nomes</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Salário</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Márcia</td>
+                <td>30</td>
+                <td>R$1500</td>
+            </tr>
+
+            <tr>
+                <td>Gabriel</td>
+                <td>24</td>
+                <td>R$1500</td>
+            </tr>
+
+            <tr>
+                <td>Rogério</td>
+                <td>42</td>
+                <td>R$1500</td>
+            </tr>
+
+            <tr>
+                <td>Amanda</td>
+                <td>20</td>
+                <td>R$1500</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total do salário</th>
+                <td>R$6000</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
