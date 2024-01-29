@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas responsivas</title>
+    <title>teste</title>
     <style>
-
-        body {
+      body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
         }
 
         table {
@@ -15,7 +15,7 @@
         }
 
         caption {
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: bolder;
             padding: 20px;
         }
@@ -26,22 +26,19 @@
         }
 
         tr:nth-child(even) {
-            background-color: rgb(228, 228, 288);
+            background-color: lightgray;
         }
 
-        #container {
-            overflow-x: auto;
+        tr:nth-child(odd) {
+            background-color: white;
         }
-        
+
     </style>
 </head>
 <body>
-    <h1>Tabelas em Telas pequenas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, fuga? Suscipit iure maxime, odio eaque similique consequatur cupiditate ad obcaecati dolorem! Unde neque, facilis quidem ducimus beatae ullam nulla animi!</p>
 
-    <div id="container">
         <table>
-            <caption>Tabelas responsivas</caption>
+            <caption>Vendas de produtos por mês</caption>
             <thead>
                 <tr>
                     <th>Produto</th>
@@ -167,6 +164,5 @@
                 </tr>
             </tbody>
         </table>
-    </div>
 </body>
 </html>
