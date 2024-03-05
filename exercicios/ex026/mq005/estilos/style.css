@@ -46,7 +46,7 @@ menu > ul > li > a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rbg(87, 87, 87);
+    background-color: rgba(78, 72, 72, 0.594);
     color: white;
     border-top: 2px solid gray;
 }
