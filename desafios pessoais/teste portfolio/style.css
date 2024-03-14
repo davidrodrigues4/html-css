@@ -84,23 +84,34 @@ main > article > h2 {
 }
 
 .containerA {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(auto, 2fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "texto fotos";
     max-width: 1300px;
 }
 
-.containerA > p {
-    display: inline-block;
-    font-size: 1.5vw;
-    line-height: 1.5em;
-    padding: 10px;
+.containerA > * {
+    display: block;
 }
 
+.texto{
+    font-size: 100%;
+    line-height: 1.5em;
+    padding: 10px;
+    grid-area: texto;
+}
+
+.fotos {
+    grid-area: fotos;
+}
 main > article > div > p {
     padding: 10px;
 }
 
 main img {
+    display: block;
     width: 300px;
     min-width: 320;
     max-width: 800px;
